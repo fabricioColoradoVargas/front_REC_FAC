@@ -9,7 +9,7 @@ import MyContacts from 'src/components/dashboard/TheMyContacts';
 export default function Dashboard() {
   return (
     <Box>
-      <Grid container spacing={3}>
+      {/* <Grid container spacing={3}>
         <Grid
           size={{
             xs: 12,
@@ -50,7 +50,7 @@ export default function Dashboard() {
         >
           <ActivityTimeline />
         </Grid>
-      </Grid>
+      </Grid> */}
     </Box>
   );
 }

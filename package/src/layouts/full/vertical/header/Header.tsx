@@ -30,7 +30,7 @@ const Header = () => {
     background: theme.palette.primary.main,
     justifyContent: 'center',
     position: 'fixed',
-    top: '72px',
+    // top: '72px',
     backdropFilter: 'blur(4px)',
     [theme.breakpoints.down('md')]: {
       minHeight: '64px',
@@ -106,50 +106,12 @@ const Header = () => {
           {/* Toggle Button Sidebar */}
           {/* ------------------------------------------- */}
 
-          <IconButton
-            aria-label="show 4 new mails"
-            color="inherit"
-            aria-controls="notification-menu"
-            aria-haspopup="true"
-            onClick={handleClick}
-          >
-            <Badge variant="dot" color="primary">
-              <IconBell size="21" stroke="1.5" />
-            </Badge>
-          </IconButton>
-
-          <Menu
-            id="notification-menu"
-            anchorEl={anchorEl}
-            open={Boolean(anchorEl)}
-            onClose={handleClose}
-            anchorReference="anchorPosition" // Use custom positioning
-            anchorPosition={
-              menuPosition ? { top: menuPosition.top, left: menuPosition.left } : undefined
-            }
-            slotProps={{
-              paper: {
-                sx: {
-                  mt: 1, // Ensures the menu appears slightly below the bell icon
-                  boxShadow: 9, // Optional: Improves visibility with a shadow
-                  minWidth: '200px', // Adjust width to ensure proper alignment
-                },
-              },
-            }}
-          >
-            <MenuItem onClick={handleClose}>
-              <Typography variant="body1">Item 1</Typography>
-            </MenuItem>
-            <MenuItem onClick={handleClose}>
-              <Typography variant="body1">Item 2</Typography>
-            </MenuItem>
-          </Menu>
-
           <Box flexGrow={1} />
 
           {lgUp ? (
             <>
               <Stack spacing={2} direction="row" alignItems="center">
+                {/*
                 <Button
                   variant="contained"
                   color="success"
@@ -158,6 +120,7 @@ const Header = () => {
                 >
                   Check Pro Template
                 </Button>
+                */}
                 <Profile />
               </Stack>
             </>
@@ -165,6 +128,7 @@ const Header = () => {
           {lgUp ? null : (
             <>
               <Stack spacing={2} direction="row" alignItems="center">
+                {/*
                 <Button
                   variant="contained"
                   color="success"
@@ -173,6 +137,7 @@ const Header = () => {
                 >
                   Check Pro Template
                 </Button>
+                */}
                 <Profile />
               </Stack>
             </>

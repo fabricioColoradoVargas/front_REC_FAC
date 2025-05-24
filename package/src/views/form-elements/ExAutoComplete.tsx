@@ -4,55 +4,39 @@ import { MultipleValuesAutocomplete } from '../../components/forms/AutoComplete/
 import { CheckboxesAutocomplete } from '../../components/forms/AutoComplete/CheckboxesAutocomplete';
 import { SizesAutocomplete } from '../../components/forms/AutoComplete/SizesAutocomplete';
 
+import '../../Modulos/registro.css';
+
+
 const ExAutoComplete = () => {
   // 2
 
   return (
     <Box>
-      <Grid container spacing={3}>
-        {/* ------------------------- row 1 ------------------------- */}
-        <Grid
-          size={{ xs: 12, lg: 4, sm: 6 }}
-          sx={{
-            display: 'flex',
-            alignItems: 'stretch',
-          }}
-        >
-          <ComboBoxAutocomplete />
-        </Grid>
+      <center>
+          <div>
 
-        {/* ------------------------- row 5 ------------------------- */}
-        <Grid
-          size={{ xs: 12, lg: 4, sm: 6 }}
-          sx={{
-            display: 'flex',
-            alignItems: 'stretch',
-          }}
-        >
-          <MultipleValuesAutocomplete />
-        </Grid>
+<form className="form_registro" action="">
+    <p className="heading">Registro de Usuario</p>
 
-        {/* ------------------------- row 6 ------------------------- */}
-        <Grid
-          size={{ xs: 12, lg: 4, sm: 6 }}
-          sx={{
-            display: 'flex',
-            alignItems: 'stretch',
-          }}
-        >
-          <CheckboxesAutocomplete />
-        </Grid>
-        {/* ------------------------- row 7 ------------------------- */}
-        <Grid
-          size={{ xs: 12, lg: 4, sm: 6 }}
-          sx={{
-            display: 'flex',
-            alignItems: 'stretch',
-          }}
-        >
-          <SizesAutocomplete />
-        </Grid>
-      </Grid>
+
+<div className="inputregistro">
+
+    <input placeholder="Nombres y Apellidos" id="username" className="inputField" type="text"/>
+    <input placeholder="Numero de Whatsapp" id="tel" className="inputField" type="tel" />
+</div>
+    <input placeholder="Hora de Entrada" id="password" className="inputField" type="time"/>    
+    <input placeholder="Hora de Salida" id="password" className="inputField" type="time"/>    
+           
+<button className="botonregistro" id="button">Capturar Imagen</button>
+
+    <div className="signupContainer">
+        <a href="#">Registrar</a>
+    </div>
+
+</form>
+      
+    </div>
+    </center>
     </Box>
   );
 };

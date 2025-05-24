@@ -1,4 +1,3 @@
-
 import {
     Box,
     Typography,
@@ -19,37 +18,27 @@ const AuthLogin = ({ title, subtitle, subtext }:{title?:string , subtitle:any , 
             </Typography>
         ) : null}
 
-        {subtext}
+        {/* {subtext} */}
 
         <Stack>
             <Box>
                 <Typography variant="subtitle1"
-                    fontWeight={500} component="label" htmlFor='username' mb="5px">Username</Typography>
+                    fontWeight={500} component="label" htmlFor='username' mb="5px">Usuario</Typography>
                 <CustomTextField id="username" variant="outlined" fullWidth />
             </Box>
             <Box mt="25px">
                 <Typography variant="subtitle1"
-                    fontWeight={500} component="label" htmlFor='password' mb="5px" >Password</Typography>
+                    fontWeight={500} component="label" htmlFor='password' mb="5px" >Contraseña<area shape="" coords="" href="" alt="" /></Typography>
                 <CustomTextField id="password" type="password" variant="outlined" fullWidth />
             </Box>
             <Stack justifyContent="space-between" direction="row" alignItems="center" my={2}>
                 <FormGroup>
                     <FormControlLabel
                         control={<Checkbox defaultChecked />}
-                        label="Remeber this Device"
+                        label="Recordar en este dispositivo"
                     />
                 </FormGroup>
-                <Typography
-                    component={Link}
-                    to="/"
-                    fontWeight="500"
-                    sx={{
-                        textDecoration: 'none',
-                        color: 'primary.main',
-                    }}
-                >
-                    Forgot Password ?
-                </Typography>
+                
             </Stack>
         </Stack>
         <Box>
@@ -62,10 +51,12 @@ const AuthLogin = ({ title, subtitle, subtext }:{title?:string , subtitle:any , 
                 to="/"
                 type="submit"
             >
-                Sign In
+                Ingresar
             </Button>
         </Box>
-        {subtitle}
+
+        {/* //texto de abajo */}
+        {/* {subtitle} */}
     </>
 );
 
