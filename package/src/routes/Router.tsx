@@ -4,6 +4,7 @@
 // @ts-ignore
 import React, { lazy } from 'react';
 import { Navigate, createBrowserRouter } from 'react-router';
+import Asistencias from '../views/asistencias/Asistencias';
 
 /* ***Layouts**** */
 const FullLayout = lazy(() => import('../layouts/full/FullLayout'));
@@ -38,6 +39,7 @@ const Router = [
       { path: '/ui/typography', exact: true, element: <TypographyPage /> },
       { path: '/ui/shadow', exact: true, element: <Shadow /> },
       { path: '/sample-page', exact: true, element: <SamplePage /> },
+      { path: '/asistencias', element: <Asistencias /> },
       { path: "/tables/basic-table", element: <BasicTable /> },
       { path: "/form-layouts", element: <FormLayouts /> },
       { path: "/form-elements/autocomplete", element: <ExAutoComplete /> },

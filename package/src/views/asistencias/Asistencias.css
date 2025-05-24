@@ -1,0 +1,58 @@
+.asistencias-paper {
+    background: #f8fafc;
+    border-radius: 24px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.3s;
+}
+
+.asistencias-paper:hover {
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.18);
+}
+
+/* Estilo para el título principal */
+.asistencias-titulo {
+    font-size: 2.0rem;
+    font-weight: bold;
+    color: #000000;
+    text-align: left;
+    margin-bottom: 20px;
+    letter-spacing: 0.1px;
+}
+
+/* Estilo para el horario */
+.asistencias-horario {
+    font-size: 1.2rem;
+    font-weight: 550;
+    color: #141313;
+    text-align: left;
+    margin-bottom: 70px;
+}
+
+/* Estilo para los botones */
+.asistencias-boton {
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 20px 0;
+    transition: background 0.2s, color 0.2s;
+}
+
+.asistencias-boton.primary {
+    background: linear-gradient(90deg, #1976d2 60%, #42a5f5 100%);
+    color: #fff;
+}
+
+.asistencias-boton.primary:hover {
+    background: linear-gradient(90deg, #1565c0 60%, #1976d2 100%);
+}
+
+.asistencias-boton.secondary {
+    border: 2px solid #1976d2;
+    color: #1976d2;
+    background: #fff;
+}
+
+.asistencias-boton.secondary:hover {
+    background: #e3f2fd;
+    color: #1565c0;
+}

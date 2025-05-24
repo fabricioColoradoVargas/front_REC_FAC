@@ -8,7 +8,7 @@ interface ProfileType {
 const profile: ProfileType[] = [
   {
     href: '/form-layouts',
-    title: 'My Profile',
+    title: 'Mi Perfil',
   },
   {
     href: '/tables/basic-table',
